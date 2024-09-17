@@ -102,6 +102,16 @@ Let's configure your Slack secrets in order to (1) verify the signature of each 
 4. Choose `Edit`
 5. Replace the value of `Signing Secret`<sup>\*</sup> and `Bot User OAuth Token`, you will find those values in the Slack application configuration under `Basic Information` and `OAuth & Permissions`. <sup>\*</sup>*(Pro tip: Be careful you don't accidentally copy 'Client Secret' (wrong) instead of 'Signing Secret' (right)!)*
 
+### 4. Configure your Retriever in AWS
+
+A retriever is an index from which we can get data in real time. You may add your custom documents and users can query these documents too using natural language. 
+
+1. Go to your AWS Console and navigate back to the Amazon Q service
+2. Click on the application just created and select `Edit`
+3. In the first Step, there is no need to update anything. Just press `Update`.
+4. In the second Step, choose `Native Retriever`.
+5. [Optional] Finally, you may chose to add a data source and include some custom documents if necessary.
+6. Press `Update Application`.
 
 ### Say hello
 > Time to say Hi!
